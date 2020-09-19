@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="blackJackStyle.css">
+</head>
+<body>
+    <div class="container-blackJack">
+        <h2>Black Jack</h2>
+        <h3><span id="status">Let's Play !</span></h3>
+
+        <div id="row-1">
+            <div id="yourBox">
+                <h3>You : <span id="yourResult">0</span></h3>
+            </div>
+
+            <div id="dealerBox">
+                <h3>Dealer : <span id="dealerResult">0</span></h3>
+            </div>
+        </div>
+
+        <div id="row-2">
+            <div>
+                <button id="hit" class="btn-lg btn-danger mr-2">Hit</button>
+                <button id="stand" class="btn-lg btn-primary mr-2">Stand</button>
+                <button id="deal" class="btn-lg btn-warning ">Deal</button>
+            </div>
+        </div>
+
+        <div id="row-3">
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="blackJackJs.js">
+
+    </script>
+</body>
+</html>

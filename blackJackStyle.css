@@ -1,0 +1,48 @@
+body{
+    /* background: url("images/bodyBackround.jpg"); */
+    height: 100%;
+}
+.container-blackJack{
+    width: 75%;
+    margin: 0px auto;
+    border: 1px solid red;
+    text-align: center;
+    /* justify-content: center; */
+}
+#row-1 , #row-2 , #row-3{
+    display: flex;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+#row-1::before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 120%;
+    width: 100%;
+    background: url("images/tableBackground.png")  center no-repeat  ;
+}
+#row-1{
+    /* height: 350px; */
+    position: relative;
+}
+#row-1 div{
+    border: 1px solid black;
+    color:white ;
+    flex:1;
+    height: 350px;
+}
+#row-1 div  img{
+    width: 18%;
+    margin: 10px;
+    /* height: 35%; */
+}
+
+table th , td {
+    padding: 5px;
+    border: 1px solid black;
+}
